@@ -1,1 +1,1 @@
-../../bin/electron ../../../knitweb
+electron --no-sandbox .
