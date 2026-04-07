@@ -32,7 +32,7 @@ Original repo: https://github.com/fossasia/knitweb
 ```bash
 docker build -t knitweb .
 
-2. Run the container (Linux with X11)bash
+## Run the container (Linux with X11)bash
 
 # Allow Docker to access your display
 xhost +local:docker
@@ -45,12 +45,16 @@ docker run -e DISPLAY=$DISPLAY \
 # Revoke access when done (security)
 xhost -local:docker
 
-Important NotesThis is a learning / demonstration project only.
-All credit for the Knitweb application goes to the FOSSASIA team.
+```
+
+
+**Important NotesThis is a learning / demonstration project only.
+All credit for the Knitweb application goes to the FOSSASIA team.**
+
 My contribution is limited to the Docker setup and fixes for container environment.
 Tested on Linux hosts with X11.
 
-Skills DemonstratedWriting Dockerfiles for GUI/Electron apps
+Skills Demonstrated Writing Dockerfiles for GUI/Electron apps
 Troubleshooting dependency and library issues
 X11 socket forwarding
 Modifying entrypoint scripts
